@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');
+
+body{
+    font-family: Vibes;
+    background-image: url(Background2.jpg);
+    color: white;
+}
+
+.head_part{
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 50px;
+    width: 100%;
+}
+
+.head_part_cont{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+#song_name_holder{
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 3%;
+    animation: slideInUp 1s 1;
+}
+
+video{
+    border: 10px double white;
+    border-radius: 20px;
+    width: 530px;
+    height: 400px;
+}
+
+@keyframes slideInUp {
+from {
+transform: translate3d(0, 100%, 0);
+transform: translate3d(0, 100%, 0);
+visibility: visible;
+}
+
+to {
+transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+}
+
+@media screen and (min-width : 1920px) {
+    body{
+        background-image: url(background1.jpg);
+    }
+
+    video{
+        width: 1000px;
+        height: 750px;
+    }
+}
